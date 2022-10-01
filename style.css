@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    background: url("img/fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Aboreto', cursive;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100vh;
+}
+.jogo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 0.5%;
+    width: 40vw;
+    height: 60vh;
+    margin:  4% auto;
+
+
+    
+}
+.jogo >div{
+    background-color: rgba(0, 0, 0, 0.0);
+    font-size: 5vw;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Aboreto', cursive;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+
+.jogo div:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 2%;
+}
+#btn-1{
+    border-left: none;
+    border-top: none;
+}
+#btn-2{
+    border-top: none;
+}
+#btn-3{
+    border-right: none;
+    border-top: none;
+}
+#btn-4{
+    border-left: none;
+}
+#btn-6{
+    border-right: none;
+}
+#btn-7{
+    border-left: none;
+    border-bottom: none;
+}
+#btn-8{
+    border-bottom: none;
+}
+#btn-9{
+    border-bottom: none;
+    border-right: none;
+}
+#conteiner{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 60%;
+    height: 85%;
+    margin: 0 auto;
+    border-radius: 5%;
+    margin-top: 1.5%;
+}
+#visor{
+    margin:0 auto;
+    padding-top: 2%;
+    text-align: center;
+    color: #fff;
+    width: 80%;
+    height: 90%;
+    font-size:1.5vw;
+}
+
+#btn-reset{
+    width: 45%;
+    font-size: 3vw;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    border:none;
+    border-radius: 5%;
+    font-family: 'Aboreto', cursive;
+    margin: 0 auto;
+    text-align: center;
+}
+#btn-reset:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+#Reset{
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 2%
+    
+}
+.Ganhador-msg{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+
+}
+.Ganhador-msg-Text{
+    color: #fff;
+    font-size: 5rem;
+    margin-bottom: 5%;
+}
+#btn-reset2, .git{
+    background-color: #5D8C7B;
+    width: 25%;
+    height: 15%;
+    color: #fff;
+    font-size:2vw;
+    border-radius: 5%;
+    font-family: 'Aboreto', cursive;
+    margin-bottom: 4%;
+}
+.git:hover{
+    background-color: #3E594F;
+    transition: 0.3s;
+    border-color: #cacaca;
+    transform: scale(1.01);
+}
+#btn-reset2:hover{
+    background-color: #3E594F;
+    transition: 0.3s;
+    border-color: #cacaca;
+    transform: scale(1.01);
+}
+.mostrar-Ganhador-msg{
+    display: flex;
+}
+
+.git a{
+    color: #fff;
+    text-decoration: none;
+    word-wrap: break-word;
+}
+@media(max-width:900px){
+    #conteiner{
+        width: 70%;
+
+    }
+    .jogo{
+        width: 50vw;
+        height: 65vh;
+    }
+    .jogo >div{
+        font-size: 7vw;
+    }
+    .Ganhador-msg-Text{
+        font-size: 4rem;
+    }
+    #btn-reset2, .git{
+        font-size:3vw;
+        width: 35%;
+    }
+}
+@media(max-width:700px){
+    #conteiner{
+        width: 80%;
+        margin-top: 1%;
+
+    }
+    .jogo{
+        width:65vw;
+    }
+    .jogo >div{
+        font-size: 8vw;
+    }
+    #visor{
+     font-size: 2vw;   
+    }
+    #btn-reset{
+        font-size: 6vw;
+    }
+    .Ganhador-msg-Text{
+        font-size: 3rem;
+    }
+    #btn-reset2, .git{
+        font-size:4vw;
+        width: 40%;
+    }
+}
+@media(max-width:450px){
+    #conteiner{
+        width: 90%;
+        margin-top: 0.7%;
+
+    }
+    .jogo{
+        width:75vw;
+    }
+    .jogo >div{
+        font-size: 10vw;
+    }
+    #visor{
+        font-size: 3vw;
+    }
+    #btn-reset{
+        font-size: 7vw;
+    }
+    #btn-reset2, .git{
+        font-size:5vw;
+        width: 45%;
+    }
+}
+@media(max-width:380px){
+    #conteiner{
+        width: 97%;
+        margin-top: 0.4%;
+
+    }
+    .jogo{
+        width:85vw;
+    }
+    .jogo >div{
+        font-size: 12vw;
+    }
+    #visor{
+        font-size: 4vw;
+    }
+    #btn-reset{
+        font-size: 6vw;
+    }
+    .Ganhador-msg-Text{
+        font-size: 2rem;
+    }
+    #btn-reset2, .git{
+        font-size:6vw;
+        width: 50%;
+    }
+}
