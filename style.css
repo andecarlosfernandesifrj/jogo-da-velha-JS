@@ -68,7 +68,7 @@ body{
     border-right: none;
 }
 #conteiner{
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(6, 45, 125, 0.6);
     width: 60%;
     height: 85%;
     margin: 0 auto;
@@ -80,6 +80,15 @@ body{
     padding-top: 2%;
     text-align: center;
     color: #fff;
+    width: 80%;
+    height: 90%;
+    font-size:1.5vw;
+}
+#visor2{
+    margin:0 auto;
+    padding-top: 2%;
+    text-align: center;
+    color: #680f0f;
     width: 80%;
     height: 90%;
     font-size:1.5vw;
